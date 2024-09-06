@@ -1,159 +1,46 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/*
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
     2. Remove default margin
   */
-* {
-  margin: 0;
-}
-/*
+  * {
+    margin: 0;
+  }
+  /*
     Typographic tweaks!
     3. Add accessible line-height
     4. Improve text rendering
   */
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-/*
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
     5. Improve media defaults
   */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-/*
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
     6. Remove built-in form typography styles
   */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-/*
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
     7. Avoid text overflows
   */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-/*
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
     8. Create a root stacking context
   */
-#root,
-#__next {
-  isolation: isolate;
-}
-:root {
-  --arrow-side-padding: 8px;
-  --dots-not-active: #bbb;
-  --dots-active: #3f3939;
-}
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  background-color: #f1f1f1;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  a {
-    text-decoration: none;
-    color: black;
+  #root, #__next {
+    isolation: isolate;
   }
-}
-.visible {
-  display: flex;
-}
-.dropdown-container {
-  width: 150px;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-.dropdownBtn {
-  width: 100%;
-}
-.carousel-container {
-  width: 500px;
-  margin: auto;
-  margin-top: 5em;
-  position: relative;
-}
-.slide {
-  background-color: rgba(0, 0, 0, 0.075);
-  display: none;
-  position: relative;
-  .credit {
-    position: absolute;
-    padding: 0 7px;
-    bottom: 0;
-    right: 0;
-    color: white;
-    > a {
-      color: white;
-    }
-  }
-  .imageNumber {
-    position: absolute;
-    color: white;
-  }
-}
-.slide img {
-  vertical-align: middle;
-  width: 100%;
-  height: 100%;
-}
-.activeSlide {
-  display: block;
-}
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 3em;
-  padding: 8px 0;
-  cursor: pointer;
-}
-.arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.prevArrow {
-  left: 0;
-  padding-right: var(--arrow-side-padding);
-}
-.nextArrow {
-  right: 0;
-  padding-left: var(--arrow-side-padding);
-}
-.dots {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: var(--dots-not-active);
-  cursor: pointer;
-}
-.dotsContainer {
-  margin-top: 8px;
-  display: flex;
-  justify-content: center;
-  gap: 1ch;
-}
-.dots:hover,
-.activeDot {
-  background-color: var(--dots-active);
-}
