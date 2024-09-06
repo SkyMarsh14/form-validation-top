@@ -65,7 +65,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:2ch;
+  gap: 2ch;
   max-width: 600px;
   height: 500px;
   margin: auto;
@@ -79,16 +79,16 @@ form {
 }
 .form-field {
   display: flex;
-  gap:2ch;
+  gap: 2ch;
   > label {
     width: 120px;
     text-align: right;
   }
-  >input{
-    margin-left:auto;
+  > input {
+    margin-left: auto;
   }
 }
 .form-submit-btn {
   width: 50%;
-  margin-top:20px;
+  margin-top: 20px;
 }
