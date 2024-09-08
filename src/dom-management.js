@@ -1,9 +1,12 @@
 
 const passwordInput=document.querySelector('#password');
 const passwordCheckbox=document.querySelector('.passwordCheckbox');
+passwordCheckbox.addEventListener('click',()=>{
+    hidePw();
+})
 
-export default function hidePw(){
-    passwordCheckbox.addEventListener('click',()=>{
+function hidePw(){
         passwordInput.type = (passwordInput.type==='password') ? 'text':'password';
-    })
 };
+
+export {hidePw,passwordCheckbox}
