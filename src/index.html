@@ -14,7 +14,12 @@
       </div>
       <div class="country-field form-field">
         <label for="country">Country</label>
-        <input id="country" type="text" />
+        <select name="countries" id="countries">
+          <option value="us">United States</option>
+          <option value="jp">Japan</option>
+          <option value="ca">Canada</option>
+          <option value="nl">Netherland</option>
+        </select>
       </div>
       <div class="zipCode-field form-field">
         <label for="zipCode">Zip code</label>
@@ -22,7 +27,11 @@
       </div>
       <div class="password-field form-field">
         <label for="password">Password</label>
-        <input type="text" id="password" />
+        <input type="password" id="password" />
+        <div class="togglePassword">
+          <div>show password</div>
+          <input type="checkbox" class="passwordCheckbox">
+        </div>
       </div>
       <div class="password-confirmation-field form-field">
         <label for="password-confirmation">Confirm Password</label>

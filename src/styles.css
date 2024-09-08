@@ -79,16 +79,34 @@ form {
 }
 .form-field {
   display: flex;
+  flex-wrap:wrap;
+  align-items: center;
   gap: 2ch;
+  width: 80%;
   > label {
     width: 120px;
     text-align: right;
   }
   > input {
-    margin-left: auto;
+    width: 50%;
+  }
+  > select {
+    text-align: center;
+    width: 50%;
   }
 }
 .form-submit-btn {
   width: 50%;
   margin-top: 20px;
+}
+.togglePassword{
+  display:flex;
+  position:absolute;
+  vertical-align: middle;
+  right:-50px;
+  gap:5px;
+  align-items: center;
+}
+.password-field{
+  position:relative;
 }
